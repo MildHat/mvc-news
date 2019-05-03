@@ -4,7 +4,7 @@ class View
 {
     public static function render($template, $data = 0)
     {
-        $pathToTemplate = ROOT . '/templates/' . $template . '.php';
+        $pathToTemplate = ROOT . '/views/' . $template . '.php';
 
         if (file_exists($pathToTemplate))
         {
