@@ -1,5 +1,9 @@
 <?php
 
 return [
-    '^about$' => 'pages/about'
+    '^about$' => 'pages/about',
+
+
+
+    '^$' => 'pages/home'
 ];

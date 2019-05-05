@@ -31,6 +31,7 @@ class Router
         {
             if(preg_match("~$uriPattern~", $uri))
             {
+                $status = true;
                 $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
                 $segments = explode('/', $internalRoute);
 
@@ -54,6 +55,9 @@ class Router
                 }
                 echo "Error";
             }
+        }
+        if (!$status) {
+            header('Location: /');
         }
     }
 }
