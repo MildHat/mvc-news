@@ -2,7 +2,7 @@
 
 class View
 {
-    public static function render($template, $data = 0)
+    public static function render($template, $data = [])
     {
         $pathToTemplate = ROOT . '/views/' . $template . '.php';
 

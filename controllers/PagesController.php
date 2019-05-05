@@ -4,7 +4,9 @@ class PagesController
 {
     public function actionAbout()
     {
-        View::render('pages/about');
+        $employees = User::getEmployees();
+
+        View::render('pages/about', $employees);
         return true;
     }
 }

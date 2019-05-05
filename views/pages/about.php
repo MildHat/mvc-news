@@ -5,7 +5,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content">
-                        <h2>ABOUT US</h2>
+                        <h2>О НАС</h2>
                     </div>
                 </div>
             </div>
@@ -76,77 +76,25 @@
                             <h5>Our Team</h5>
                         </div>
 
-                        <!-- Single Team Member -->
-                        <div class="single-team-member d-flex align-items-center">
-                            <div class="team-member-thumbnail">
-                                <img src="/templates/img/bg-img/36.jpg" alt="">
-                                <div class="social-btn">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <?php foreach ($data as $employee): ?>
+                            <!-- Single Team Member -->
+                            <div class="single-team-member d-flex align-items-center">
+                                <div class="team-member-thumbnail">
+                                    <img src="<?php echo $employee['path_to_profile_photo']; ?>" alt="">
+                                    <div class="social-btn">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-member-content">
+                                    <h6><?php echo $employee['username']; ?></h6>
+                                    <span><?php echo $employee['position']; ?></span>
+                                    <p><?php echo $employee['description']; ?></p>
                                 </div>
                             </div>
-                            <div class="team-member-content">
-                                <h6>Mrs. Susan Monroe</h6>
-                                <span>Reporter</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur mauris id
-                                    scelerisque eleifend. Nunc vestibulum cursea quam at scelerisque.</p>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
 
-                        <!-- Single Team Member -->
-                        <div class="single-team-member d-flex align-items-center">
-                            <div class="team-member-thumbnail">
-                                <img src="/templates/img/bg-img/37.jpg" alt="">
-                                <div class="social-btn">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-member-content">
-                                <h6>Mr. Luke Garner</h6>
-                                <span>Editor in Chief</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur mauris id
-                                    scelerisque eleifend. Nunc vestibulum cursea quam at scelerisque.</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Team Member -->
-                        <div class="single-team-member d-flex align-items-center">
-                            <div class="team-member-thumbnail">
-                                <img src="/templates/img/bg-img/38.jpg" alt="">
-                                <div class="social-btn">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-member-content">
-                                <h6>Ms. Elena Korikova</h6>
-                                <span>Marketer</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur mauris id
-                                    scelerisque eleifend. Nunc vestibulum cursea quam at scelerisque.</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Team Member -->
-                        <div class="single-team-member d-flex align-items-center">
-                            <div class="team-member-thumbnail">
-                                <img src="/templates/img/bg-img/39.jpg" alt="">
-                                <div class="social-btn">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-member-content">
-                                <h6>Mr. Tom Wellington</h6>
-                                <span>Photographer</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur mauris id
-                                    scelerisque eleifend. Nunc vestibulum cursea quam at scelerisque.</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -174,7 +122,7 @@
                         <div class="single-sidebar-widget p-30">
                             <!-- Section Title -->
                             <div class="section-heading">
-                                <h5>Categories</h5>
+                                <h5>Категории</h5>
                             </div>
 
                             <!-- Catagory Widget -->

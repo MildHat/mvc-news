@@ -9,6 +9,7 @@ error_reporting(E_ALL);
 
 // including system files
 define('ROOT', dirname(__FILE__));
+require_once(ROOT . '/config/db_params.php');
 require_once(ROOT . '/components/autoload.php');
 
 
