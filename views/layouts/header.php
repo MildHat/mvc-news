@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Mag - Video &amp; Magazine HTML Template</title>
+    <title>Mag</title>
 
     <!-- Favicon -->
     <link rel="icon" href="/templates/img/core-img/favicon.ico">
@@ -57,16 +57,16 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
+                                <li class="active"><a href="">Home</a></li>
                                 <li><a href="archive.html">Archive</a></li>
                                 <li><a href="#">Pages</a>
                                     <ul class="dropdown">
-                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="">Home</a></li>
                                         <li><a href="archive.html">Archive</a></li>
                                         <li><a href="video-post.html">Single Video Post</a></li>
                                         <li><a href="single-post.html">Single Post</a></li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="/about">About Us</a></li>
+                                        <li><a href="/contact">Contact</a></li>
                                         <li><a href="submit-video.html">Submit Video</a></li>
                                         <li><a href="login.html">Login</a></li>
                                     </ul>
@@ -111,8 +111,8 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/contact">Contact</a></li>
                             </ul>
                         </div>
                         <!-- Nav End -->

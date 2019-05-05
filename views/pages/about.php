@@ -43,40 +43,16 @@
                         <div class="section-heading">
                             <h5>About Us</h5>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur mauris id
-                            scelerisque
-                            eleifend. Nunc vestibulum cursus quam at scelerisque. Aliquam quis varius orci, vel
-                            tincidunt
-                            est. Proin ac tincidunti, atmots interdum erat. Maecenas neque lorem, aliquet in tempus non,
-                            efficitur ac neque.</p>
-                        <p>Phasellus elefend odio quis dolor pretium condimentu. Morbi quis mauris ipsum urna eu
-                            fermentum
-                            bentons Suspendisse auctor magna ac porta ornare. Fusce finibus nibh at lacinia
-                            lobortis.</p>
-                        <ul>
-                            <li><i class="fa fa-check"></i> Vivamus starlord finibus, dictum massa eget, suscipit metus
-                                nami
-                                at tristique elit started.
-                            </li>
-                            <li><i class="fa fa-check"></i> Cras ipsum libero, suscipit vitamin tellus vitae, feugiat
-                                ultricies purus praesent gamora.
-                            </li>
-                            <li><i class="fa fa-check"></i> Proin ex sem, ultrices drax the sit amet, facilisis
-                                destroyer et
-                                odio profession risusest.
-                            </li>
-                            <li><i class="fa fa-check"></i> Morbi maximus mauris eget groot dignissim, in laoreet justo
-                                facilisis.
-                            </li>
-                        </ul>
-                        <img class="mt-15" src="/templates/img/bg-img/35.jpg" alt="">
-
+                        <?php foreach ($data['about'] as $item): ?>
+                            <?php echo $item['description']; ?>
+                            <img class="mt-15" src="<?php echo $item['path_to_photo']; ?>" alt="">
+                        <?php endforeach; ?>
                         <!-- Team Member Area -->
                         <div class="section-heading mt-30">
                             <h5>Our Team</h5>
                         </div>
 
-                        <?php foreach ($data as $employee): ?>
+                        <?php foreach ($data['employees'] as $employee): ?>
                             <!-- Single Team Member -->
                             <div class="single-team-member d-flex align-items-center">
                                 <div class="team-member-thumbnail">
