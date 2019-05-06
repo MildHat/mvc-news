@@ -16,6 +16,29 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `about`
+--
+
+DROP TABLE IF EXISTS `about`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `about` (
+  `description` text NOT NULL,
+  `path_to_photo` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `about`
+--
+
+LOCK TABLES `about` WRITE;
+/*!40000 ALTER TABLE `about` DISABLE KEYS */;
+INSERT INTO `about` VALUES ('<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur mauris id\n                            scelerisque\n                            eleifend. Nunc vestibulum cursus quam at scelerisque. Aliquam quis varius orci, vel\n                            tincidunt\n                            est. Proin ac tincidunti, atmots interdum erat. Maecenas neque lorem, aliquet in tempus non,\n                            efficitur ac neque.</p><p>Phasellus elefend odio quis dolor pretium condimentu. Morbi quis mauris ipsum urna eu\n                            fermentum\n                            bentons Suspendisse auctor magna ac porta ornare. Fusce finibus nibh at lacinia\n                            lobortis.</p><ul>\n                            <li><i class=\"fa fa-check\"></i> Vivamus starlord finibus, dictum massa eget, suscipit metus\n                                nami\n                                at tristique elit started.\n                            </li>\n                            <li><i class=\"fa fa-check\"></i> Cras ipsum libero, suscipit vitamin tellus vitae, feugiat\n                                ultricies purus praesent gamora.\n                            </li>\n                            <li><i class=\"fa fa-check\"></i> Proin ex sem, ultrices drax the sit amet, facilisis\n                                destroyer et\n                                odio profession risusest.\n                            </li>\n                            <li><i class=\"fa fa-check\"></i> Morbi maximus mauris eget groot dignissim, in laoreet justo\n                                facilisis.\n                            </li>\n                        </ul>','/upload/about/about.jpg');
+/*!40000 ALTER TABLE `about` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `user`
 --
 
@@ -57,4 +80,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-05 10:56:27
+-- Dump completed on 2019-05-06  4:02:10
